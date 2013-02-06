@@ -6,18 +6,22 @@
     <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
 <body>
-    <div>
-        <form method="post" action="/accounts" class="form-inline">
+<div>
+    <form method="post" action="/accounts" class="form-inline">
+        <fieldset>
+            <legend>Accounts <a class="btn btn-info" href="/users">Users</a> <a class="btn btn-info" href="/transactions">Transactions</a></legend>
+            <label>User:</label>
             <select name="user_id">
                 <c:forEach var="user" items="${users}">
                     <option value="<c:out value="${user.id}"/>"><c:out value="${user.name}"/></option>
                 </c:forEach>
             </select>
+            <label>Name:</label>
             <input name="name" type="text" class="input-medium" placeholder="Name">
             <button type="submit" class="btn btn-primary">Create</button>
-        </form>
-    </div>
-
+        </fieldset>
+    </form>
+</div>
     <table class="table table-striped table-bordered">
         <tr>
             <th>ID</th>

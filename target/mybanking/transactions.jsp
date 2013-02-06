@@ -9,7 +9,7 @@
 <div>
     <form method="post" action="/transactions" class="form-inline">
         <fieldset>
-            <legend>Transactions<button class="btn btn-primary" onclick="location.href = '/users'">Users</button></legend>
+            <legend>Transactions <a class="btn btn-info" href="/users">Users</a> <a class="btn btn-info" href="/accounts">Accounts</a></legend>
             <label>Debet account:</label>
             <select name="debet_id">
                 <c:forEach var="account" items="${accounts}">

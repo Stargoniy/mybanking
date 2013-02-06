@@ -1,10 +1,6 @@
 package com.in6k.mybanking;
 
-import com.in6k.mybanking.dao.AccountDao;
-import com.in6k.mybanking.dao.TransactionDao;
 import com.in6k.mybanking.dao.UserDao;
-import com.in6k.mybanking.entity.Account;
-import com.in6k.mybanking.entity.Transaction;
 import com.in6k.mybanking.entity.User;
 
 import java.util.List;

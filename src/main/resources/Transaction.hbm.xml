@@ -5,10 +5,12 @@
 <hibernate-mapping package="com.in6k.mybanking.entity">
     <class name="Transaction" table="transactions">
         <id name="id" type="int" column="id">
-            <generator class="native" />
+            <generator class="native"/>
         </id>
-        <property name="sum" type="double" column="sum" />
-        <many-to-one name="debetAccount" class="Account" column="debet_account_id" not-null="true" unique="true" lazy="false"/>
-        <many-to-one name="creditAccount" class="Account" column="credit_account_id" not-null="true" unique="true" lazy="false"/>
+        <property name="sum" type="double" column="sum"/>
+        <many-to-one name="debetAccount" class="Account" column="debet_account_id" not-null="true" unique="true"
+                     lazy="false"/>
+        <many-to-one name="creditAccount" class="Account" column="credit_account_id" not-null="true" unique="true"
+                     lazy="false"/>
     </class>
 </hibernate-mapping>

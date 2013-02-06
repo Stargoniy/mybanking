@@ -26,12 +26,12 @@
     <file path="/Users.java" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360149947636" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/java/com/in6k/mybanking/servlet/Users.java" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360149963673" ignored="false" />
     <file path="/UsersServlet.java" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360152280956" ignored="false" />
-    <file path="/users.jsp" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360157111790" ignored="false" />
+    <file path="/users.jsp" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360165524705" ignored="false" />
     <file path="/web.xml" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360158779560" ignored="false" />
     <file path="/AccountServlet.java" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360156236377" ignored="false" />
-    <file path="/accounts.jsp" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360157057476" ignored="false" />
+    <file path="/accounts.jsp" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360165288801" ignored="false" />
     <file path="/TransactionsServlet.java" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360160219062" ignored="false" />
-    <file path="/transactions.jsp" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360163079465" ignored="false" />
+    <file path="/transactions.jsp" changelist="7092c9fa-f6fe-419a-9278-9cf7b2452fab" time="1360164990699" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,45 +147,7 @@
       <file leaf-file-name="transactions.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/transactions.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="127" selection-start="471" selection-end="471" vertical-scroll-proportion="-4.4583335">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.hbm.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Account.hbm.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="81" selection-start="325" selection-end="325" vertical-scroll-proportion="0.15151516">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountsServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/mybanking/servlet/AccountsServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="45" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/mybanking/entity/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/users.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="8" column="0" selection-start="251" selection-end="1561" vertical-scroll-proportion="2.25">
               <folding />
             </state>
           </provider>
@@ -194,7 +156,25 @@
       <file leaf-file-name="accounts.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/accounts.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="358" selection-end="358" vertical-scroll-proportion="-4.7083335">
+            <state line="35" column="33" selection-start="1347" selection-end="1347" vertical-scroll-proportion="-21.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.hbm.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/User.hbm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/users.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="5" selection-start="256" selection-end="256" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -213,8 +193,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/mybanking/entity/Account.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Account.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/mybanking/servlet/AccountServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/accounts.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/users.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/mybanking/dao/AccountDao.java" />
@@ -226,6 +204,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/Transaction.hbm.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/mybanking/servlet/TransactionsServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/transactions.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/accounts.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/users.jsp" />
       </list>
     </option>
   </component>
@@ -345,36 +325,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -395,122 +345,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybanking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -914,25 +748,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/e91af51c/e3d67915-acdf-4bb5-b7a6-b667014356d5/banking..users">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/mybanking/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="33" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
@@ -982,16 +797,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/mybanking/servlet/TransactionsServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Account.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.530303">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Transaction.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="99" selection-start="547" selection-end="547" vertical-scroll-proportion="0.25252524">
+        <state line="6" column="81" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1012,30 +820,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/accounts.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Transaction.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="358" selection-end="358" vertical-scroll-proportion="-4.7083335">
+        <state line="10" column="99" selection-start="547" selection-end="547" vertical-scroll-proportion="0.26362038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/mybanking/servlet/TransactionsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="41" selection-start="716" selection-end="716" vertical-scroll-proportion="0.21089631">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/mybanking/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="104" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/transactions.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="251" selection-end="1561" vertical-scroll-proportion="2.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/users.jsp">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="5" selection-start="256" selection-end="256" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/accounts.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="33" selection-start="1347" selection-end="1347" vertical-scroll-proportion="-21.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/transactions.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="127" selection-start="471" selection-end="471" vertical-scroll-proportion="-4.4583335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Account.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="81" selection-start="325" selection-end="325" vertical-scroll-proportion="0.15151516">
           <folding />
         </state>
       </provider>

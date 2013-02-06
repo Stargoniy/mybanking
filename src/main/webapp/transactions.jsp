@@ -9,17 +9,23 @@
 <div>
     <form method="post" action="/transactions" class="form-inline">
         <fieldset>
-            <legend>Transactions<input value="HTML форум" onclick="location.href='http://www.google.ru/'" type="button" />Users</legend>
+            <legend>Transactions <a class="btn btn-info" href="/users">Users</a> <a class="btn btn-info"
+                                                                                    href="/accounts">Accounts</a>
+            </legend>
             <label>Debet account:</label>
             <select name="debet_id">
                 <c:forEach var="account" items="${accounts}">
-                    <option value="<c:out value="${account.id}"/>"><c:out value="${account.name}"/> (<c:out value="${account.user.name}"/>)</option>
+                    <option value="<c:out value="${account.id}"/>"><c:out value="${account.name}"/> (<c:out
+                            value="${account.user.name}"/>)
+                    </option>
                 </c:forEach>
             </select>
             <label>Credit account:</label>
             <select name="credit_id">
                 <c:forEach var="account" items="${accounts}">
-                    <option value="<c:out value="${account.id}"/>"><c:out value="${account.name}"/> (<c:out value="${account.user.name}"/>)</option>
+                    <option value="<c:out value="${account.id}"/>"><c:out value="${account.name}"/> (<c:out
+                            value="${account.user.name}"/>)
+                    </option>
                 </c:forEach>
             </select>
             <input name="sum" type="text" class="input-medium" placeholder="Sum">
@@ -37,10 +43,14 @@
     </tr>
     <c:forEach var="transaction" items="${transactions}">
         <tr>
-            <td><c:out value="${transaction.id}" /></td>
-            <td><c:out value="${transaction.debetAccount.name}"/> (<c:out value="${transaction.debetAccount.user.name}"/>)</td>
-            <td><c:out value="${transaction.creditAccount.name}"/> (<c:out value="${transaction.creditAccount.user.name}"/>)</td>
-            <td><c:out value="${transaction.sum}" /></td>
+            <td><c:out value="${transaction.id}"/></td>
+            <td><c:out value="${transaction.debetAccount.name}"/> (<c:out
+                    value="${transaction.debetAccount.user.name}"/>)
+            </td>
+            <td><c:out value="${transaction.creditAccount.name}"/> (<c:out
+                    value="${transaction.creditAccount.user.name}"/>)
+            </td>
+            <td><c:out value="${transaction.sum}"/></td>
         </tr>
     </c:forEach>
 </table>
