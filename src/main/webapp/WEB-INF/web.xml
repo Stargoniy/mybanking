@@ -4,4 +4,25 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>users</servlet-name>
+        <servlet-class>com.in6k.mybanking.servlet.UsersServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>accounts</servlet-name>
+        <servlet-class>com.in6k.mybanking.servlet.AccountServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>users</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>accounts</servlet-name>
+        <url-pattern>/accounts</url-pattern>
+    </servlet-mapping>
+
 </web-app>

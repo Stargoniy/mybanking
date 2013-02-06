@@ -1,5 +1,5 @@
 <%
-    response.sendRedirect("transactions.jsp");
+    response.sendRedirect("/accounts");
 %>
 <html>
 <head>

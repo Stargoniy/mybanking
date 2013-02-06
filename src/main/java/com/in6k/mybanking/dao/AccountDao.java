@@ -16,7 +16,7 @@ public class AccountDao {
         session.close();
     }
 
-    public static List<Account> findAllAccounts() {
+    public static List<Account> findAll() {
         Session session = HibernateUtil.getSessionFactory().openSession();
         List<Account> result = session.createCriteria(Account.class).list();
         session.close();
