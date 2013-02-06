@@ -9,7 +9,7 @@
 <div>
     <form method="post" action="/transactions" class="form-inline">
         <fieldset>
-            <legend>Transactions<button type="button" class="btn btn-primary">Create</button></legend>
+            <legend>Transactions<input value="HTML форум" onclick="location.href='http://www.google.ru/'" type="button" />Users</legend>
             <label>Debet account:</label>
             <select name="debet_id">
                 <c:forEach var="account" items="${accounts}">
