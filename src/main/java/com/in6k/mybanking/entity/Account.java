@@ -3,7 +3,7 @@ package com.in6k.mybanking.entity;
 public class Account {
     protected int id;
     protected String name;
-    protected int userId;
+    protected User user;
 
     public int getId() {
         return id;
@@ -21,11 +21,11 @@ public class Account {
         this.name = name;
     }
 
-    public int getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setUser(User user) {
+        this.user = user;
     }
 }

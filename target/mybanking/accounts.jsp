@@ -7,12 +7,12 @@
 <body>
     <div>
         <form method="post" action="/accounts" class="form-inline">
-            <select>
+            <select name="user_id">
                 <c:forEach var="user" items="${users}">
-                    <option><c:out value="${user.name}"/></option>
+                    <option value="<c:out value="${user.id}"/>"><c:out value="${user.name}"/></option>
                 </c:forEach>
             </select>
-            <input name="name" type="text" class="input-xxlarge" placeholder="Name">
+            <input name="name" type="text" class="input-medium search-query" placeholder="Name">
             <button type="submit" class="btn btn-primary">Create</button>
         </form>
     </div>
@@ -21,13 +21,15 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>User ID</th>
+            <th>User</th>
+            <th>Is system</th>
         </tr>
         <c:forEach var="account" items="${accounts}">
             <tr>
                 <td><c:out value="${account.id}" /></td>
                 <td><c:out value="${account.name}" /></td>
-                <td><c:out value="${account.userId}" /></td>
+                <td><c:out value="${account.user.name}" /></td>
+                <td><c:out value="${account.user.system}" /></td>
             </tr>
         </c:forEach>
     </table>

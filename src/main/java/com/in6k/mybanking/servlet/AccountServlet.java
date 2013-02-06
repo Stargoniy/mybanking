@@ -25,6 +25,10 @@ public class AccountServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        Account account = new Account();
+        account.setName(req.getParameter("name"));
+        account.setUser(UserDao.findById(new Integer(req.getParameter("user_id"))));
+        AccountDao.save(account);
+        resp.sendRedirect("/accounts");
     }
 }

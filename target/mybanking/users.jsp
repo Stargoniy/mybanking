@@ -7,7 +7,7 @@
 <body>
     <div>
         <form method="post" action="/users" class="form-inline">
-            <input name="name" type="text" class="input-xxlarge" placeholder="Name">
+            <input name="name" type="text" class="input-medium" placeholder="Name">
             <label class="checkbox">
                 <input name="system" type="checkbox"> Is system
             </label>
