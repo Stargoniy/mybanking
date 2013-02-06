@@ -32,12 +32,22 @@
       <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12" />
       <column name="user_id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
       <primary-key name="PRIMARY" columns="id" />
+      <exported-key name="FK7479895534EE0A44" table="transactions" schema="" catalog="banking" columns="credit_account" />
+      <exported-key name="FK74798955D60F8CBB" table="transactions" schema="" catalog="banking" columns="debet_account" />
     </table>
     <table name="transactions" schema="" catalog="banking" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
       <column name="sum" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
       <column name="debet_account" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
       <column name="credit_account" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <primary-key name="PRIMARY" columns="id" />
+      <foreign-key name="FK7479895534EE0A44" columns="credit_account" ref-table="accounts" ref-schema="" ref-catalog="banking" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2" />
+      <foreign-key name="FK74798955D60F8CBB" columns="debet_account" ref-table="accounts" ref-schema="" ref-catalog="banking" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2" />
+    </table>
+    <table name="users" schema="" catalog="banking" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true" />
+      <column name="name" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12" />
+      <column name="system" sqlType="BIT" length="0" precision="0" nullable="false" jdbcType="-7" />
       <primary-key name="PRIMARY" columns="id" />
     </table>
     <table name="employees" schema="" catalog="employee" type="TABLE">

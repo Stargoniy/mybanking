@@ -22,6 +22,7 @@
 
         <property name="hbm2ddl.auto">update</property>
         <property name="hibernate.connection.autocommit">true</property>
+        <mapping resource="User.hbm.xml"/>
         <mapping resource="Account.hbm.xml"/>
         <mapping resource="Transaction.hbm.xml"/>
     </session-factory>

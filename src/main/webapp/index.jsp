@@ -1,3 +1,6 @@
+<%
+    response.sendRedirect("transactions.jsp");
+%>
 <html>
 <head>
     <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
