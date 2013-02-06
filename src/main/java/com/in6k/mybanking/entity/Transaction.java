@@ -4,7 +4,15 @@ public class Transaction {
     protected int id;
     protected Account debetAccount;
     protected Account creditAccount;
-    protected long sum;
+    protected double sum;
+
+    public double getSum() {
+        return sum;
+    }
+
+    public void setSum(double sum) {
+        this.sum = sum;
+    }
 
     public int getId() {
         return id;
@@ -28,13 +36,5 @@ public class Transaction {
 
     public void setCreditAccount(Account creditAccount) {
         this.creditAccount = creditAccount;
-    }
-
-    public long getSum() {
-        return sum;
-    }
-
-    public void setSum(long sum) {
-        this.sum = sum;
     }
 }

@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE HTML>
 <html>
 <head>
     <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
@@ -12,7 +13,7 @@
                     <option value="<c:out value="${user.id}"/>"><c:out value="${user.name}"/></option>
                 </c:forEach>
             </select>
-            <input name="name" type="text" class="input-medium search-query" placeholder="Name">
+            <input name="name" type="text" class="input-medium" placeholder="Name">
             <button type="submit" class="btn btn-primary">Create</button>
         </form>
     </div>

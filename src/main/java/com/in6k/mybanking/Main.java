@@ -27,7 +27,7 @@ public class Main {
 //        transaction.setSum((long) 10);
 //        TransactionDao.save(transaction);
 //
-//        List<Transaction> transactions = TransactionDao.findAllTransactions();
+//        List<Transaction> transactions = TransactionDao.findAll();
 //        for (Transaction t : transactions) {
 //            System.out.println("CreditAccount name: " + t.getCreditAccount().getName());
 //            System.out.println("CreditAccount name: " + t.getDebetAccount().getName());

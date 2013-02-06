@@ -12,7 +12,12 @@
 
     <servlet>
         <servlet-name>accounts</servlet-name>
-        <servlet-class>com.in6k.mybanking.servlet.AccountServlet</servlet-class>
+        <servlet-class>com.in6k.mybanking.servlet.AccountsServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>transactions</servlet-name>
+        <servlet-class>com.in6k.mybanking.servlet.TransactionsServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -23,6 +28,11 @@
     <servlet-mapping>
         <servlet-name>accounts</servlet-name>
         <url-pattern>/accounts</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>transactions</servlet-name>
+        <url-pattern>/transactions</url-pattern>
     </servlet-mapping>
 
 </web-app>
