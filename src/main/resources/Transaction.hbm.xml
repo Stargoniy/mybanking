@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.in6k.mybanking.entity">
+    <class name="Transaction" table="transactions">
+        <id name="id" type="int" column="id">
+            <generator class="native" />
+        </id>
+        <!--<property name="debetAccount" type="int" column="debet_account" />-->
+        <!--<property name="creditAccount" type="int" column="credit_account" />-->
+        <property name="sum" type="long" column="sum" />
+
+        <many-to-one name="debetAccount" class="Account" column="debet_account" not-null="true" cascade="all" unique="true" lazy="false"/>
+        <many-to-one name="creditAccount" class="Account" column="credit_account" not-null="true" cascade="all" unique="true" lazy="false"/>
+        <!--<one-to-one name="debetAccount" class="Account" col/>-->
+        <!--<one-to-one name="creditAccount" class="Account" />-->
+    </class>
+</hibernate-mapping>
