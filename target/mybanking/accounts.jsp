@@ -9,7 +9,9 @@
 <div>
     <form method="post" action="/accounts" class="form-inline">
         <fieldset>
-            <legend>Accounts <a class="btn btn-info" href="/users">Users</a> <a class="btn btn-info" href="/transactions">Transactions</a></legend>
+            <legend>Accounts <a class="btn btn-info" href="/users">Users</a> <a class="btn btn-info"
+                                                                                href="/transactions">Transactions</a>
+            </legend>
             <label>User:</label>
             <select name="user_id">
                 <c:forEach var="user" items="${users}">
@@ -22,21 +24,23 @@
         </fieldset>
     </form>
 </div>
-    <table class="table table-striped table-bordered">
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>User</th>
+        <th>Is system</th>
+        <th>Sum</th>
+    </tr>
+    <c:forEach var="account" items="${accounts}">
         <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>User</th>
-            <th>Is system</th>
+            <td><c:out value="${account.id}"/></td>
+            <td><c:out value="${account.name}"/></td>
+            <td><c:out value="${account.user.name}"/></td>
+            <td><c:out value="${account.user.system}"/></td>
+            <td><c:out value="${account.sum}"/></td>
         </tr>
-        <c:forEach var="account" items="${accounts}">
-            <tr>
-                <td><c:out value="${account.id}" /></td>
-                <td><c:out value="${account.name}" /></td>
-                <td><c:out value="${account.user.name}" /></td>
-                <td><c:out value="${account.user.system}" /></td>
-            </tr>
-        </c:forEach>
-    </table>
+    </c:forEach>
+</table>
 </body>
 </html>

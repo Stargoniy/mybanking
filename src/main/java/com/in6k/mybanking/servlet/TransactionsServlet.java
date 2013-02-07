@@ -30,7 +30,7 @@ public class TransactionsServlet extends HttpServlet {
         transaction.setDebetAccount(AccountDao.findById(new Integer(req.getParameter("debet_id"))));
         transaction.setCreditAccount(AccountDao.findById(new Integer(req.getParameter("credit_id"))));
 //        transaction.setSum(new Long(req.getParameter("sum")));
-        transaction.setSum(10.0);
+        transaction.setSum(1.0);
         TransactionDao.save(transaction);
         resp.sendRedirect("/transactions");
     }

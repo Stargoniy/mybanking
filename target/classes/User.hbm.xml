@@ -5,9 +5,9 @@
 <hibernate-mapping package="com.in6k.mybanking.entity">
     <class name="User" table="users">
         <id name="id" type="int" column="id">
-            <generator class="native" />
+            <generator class="native"/>
         </id>
-        <property name="name" type="string" column="name" />
-        <property name="system" type="boolean" column="system" />
+        <property name="name" type="string" column="name"/>
+        <property name="system" type="boolean" column="system"/>
     </class>
 </hibernate-mapping>

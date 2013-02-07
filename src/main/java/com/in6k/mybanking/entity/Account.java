@@ -1,9 +1,20 @@
 package com.in6k.mybanking.entity;
 
-public class Account {
+import java.io.Serializable;
+
+public class Account implements Serializable{
     protected int id;
     protected String name;
     protected User user;
+    protected double sum;
+
+    public double getSum() {
+        return sum;
+    }
+
+    public void setSum(double sum) {
+        this.sum = sum;
+    }
 
     public int getId() {
         return id;

@@ -2,9 +2,12 @@ package com.in6k.mybanking.dao;
 
 import com.in6k.mybanking.entity.Account;
 import com.in6k.mybanking.hibernate.HibernateUtil;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Expression;
 
+import java.io.Serializable;
 import java.util.List;
 
 public class AccountDao {
@@ -30,5 +33,19 @@ public class AccountDao {
         return result;
     }
 
-//    public
+    public static double CalculateSum(Account account) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        List<com.in6k.mybanking.entity.Transaction> transactionsDebet = session.createCriteria(com.in6k.mybanking.entity.Transaction.class).add(Expression.like("debetAccount", account)).list();
+        List<com.in6k.mybanking.entity.Transaction> transactionsCredit = session.createCriteria(com.in6k.mybanking.entity.Transaction.class).add(Expression.like("creditAccount", account)).list();
+//        List<com.in6k.mybanking.entity.Transaction> transactionsCredit = criteria.add(Expression.like("creditAccount", account)).list();
+        double result = 0;
+        for (com.in6k.mybanking.entity.Transaction t : transactionsDebet) {
+            result += t.getSum();
+        }
+        for (com.in6k.mybanking.entity.Transaction t : transactionsCredit) {
+            result -= t.getSum();
+        }
+        session.close();
+        return result;
+    }
 }

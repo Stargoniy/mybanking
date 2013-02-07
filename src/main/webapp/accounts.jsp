@@ -30,6 +30,7 @@
         <th>Name</th>
         <th>User</th>
         <th>Is system</th>
+        <th>Sum</th>
     </tr>
     <c:forEach var="account" items="${accounts}">
         <tr>
@@ -37,6 +38,7 @@
             <td><c:out value="${account.name}"/></td>
             <td><c:out value="${account.user.name}"/></td>
             <td><c:out value="${account.user.system}"/></td>
+            <td><c:out value="${account.sum}"/></td>
         </tr>
     </c:forEach>
 </table>
