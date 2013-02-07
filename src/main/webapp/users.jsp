@@ -9,9 +9,11 @@
 <div>
     <form method="post" action="/users" class="form-inline">
         <fieldset>
-            <legend>Users <a class="btn btn-info" href="/accounts">Accounts</a> <a class="btn btn-info"
-                                                                                   href="/transactions">Transactions</a>
-            </legend>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="/users" data-toggle="tab">Users</a></li>
+                <li><a href="/accounts" data-toggle="tab">Accounts</a></li>
+                <li><a href="/transactions" data-toggle="tab">Transactions</a></li>
+            </ul>
             <label>Name:</label>
             <input name="name" type="text" class="input-medium" placeholder="Name">
             <label class="checkbox">

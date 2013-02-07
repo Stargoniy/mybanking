@@ -3,6 +3,7 @@ package com.in6k.mybanking.dao;
 import com.in6k.mybanking.entity.Account;
 import com.in6k.mybanking.hibernate.HibernateUtil;
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Expression;
@@ -37,7 +38,6 @@ public class AccountDao {
         Session session = HibernateUtil.getSessionFactory().openSession();
         List<com.in6k.mybanking.entity.Transaction> transactionsDebet = session.createCriteria(com.in6k.mybanking.entity.Transaction.class).add(Expression.like("debetAccount", account)).list();
         List<com.in6k.mybanking.entity.Transaction> transactionsCredit = session.createCriteria(com.in6k.mybanking.entity.Transaction.class).add(Expression.like("creditAccount", account)).list();
-//        List<com.in6k.mybanking.entity.Transaction> transactionsCredit = criteria.add(Expression.like("creditAccount", account)).list();
         double result = 0;
         for (com.in6k.mybanking.entity.Transaction t : transactionsDebet) {
             result += t.getSum();
@@ -45,6 +45,15 @@ public class AccountDao {
         for (com.in6k.mybanking.entity.Transaction t : transactionsCredit) {
             result -= t.getSum();
         }
+
+//        String str = "SELECT * FROM transactions WHERE debet_account_id=? AND credit_account_id=?";
+//        Query sqlQuery = session.createSQLQuery("SELECT * FROM transactions WHERE debet_account_id=? AND credit_account_id=?", account);
+//        Query query = session.createSQLQuery("SELECT sum(t.sum) FROM transactions T WHERE debet_account_id=:accountId OR credit_account_id=:accountId").addEntity(com.in6k.mybanking.entity.Transaction.class);
+//        query.setInteger("accountId", account.getId());
+//        query.setInteger(1, account.getId());
+//        List list = query.list();
+//        Object res = query.uniqueResult();
+
         session.close();
         return result;
     }

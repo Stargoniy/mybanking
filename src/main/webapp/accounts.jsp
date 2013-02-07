@@ -9,9 +9,11 @@
 <div>
     <form method="post" action="/accounts" class="form-inline">
         <fieldset>
-            <legend>Accounts <a class="btn btn-info" href="/users">Users</a> <a class="btn btn-info"
-                                                                                href="/transactions">Transactions</a>
-            </legend>
+            <ul class="nav nav-tabs">
+                <li><a href="/users" data-toggle="tab">Users</a></li>
+                <li class="active"><a href="/accounts" data-toggle="tab">Accounts</a></li>
+                <li><a href="/transactions" data-toggle="tab">Transactions</a></li>
+            </ul>
             <label>User:</label>
             <select name="user_id">
                 <c:forEach var="user" items="${users}">

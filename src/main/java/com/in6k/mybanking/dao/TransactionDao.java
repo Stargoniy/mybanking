@@ -9,9 +9,9 @@ import java.util.List;
 public class TransactionDao {
     public static void save(Transaction transaction) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-//        org.hibernate.Transaction hibernateTransaction = session.beginTransaction();
+        org.hibernate.Transaction hibernateTransaction = session.beginTransaction();
         session.saveOrUpdate(transaction);
-//        hibernateTransaction.commit();
+        hibernateTransaction.commit();
         session.close();
     }
 

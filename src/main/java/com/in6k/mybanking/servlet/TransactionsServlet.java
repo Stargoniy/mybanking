@@ -26,12 +26,27 @@ public class TransactionsServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Transaction transaction = new Transaction();
-        transaction.setDebetAccount(AccountDao.findById(new Integer(req.getParameter("debet_id"))));
-        transaction.setCreditAccount(AccountDao.findById(new Integer(req.getParameter("credit_id"))));
-//        transaction.setSum(new Long(req.getParameter("sum")));
-        transaction.setSum(1.0);
-        TransactionDao.save(transaction);
+        try {
+            double sum = Double.parseDouble(req.getParameter("sum"));
+            Account creditAccount = AccountDao.findById(new Integer(req.getParameter("credit_id")));
+            if (creditAccount.getUser().isSystem() || sum < creditAccount.getSum()) {
+                Transaction transaction = new Transaction();
+                transaction.setDebetAccount(AccountDao.findById(new Integer(req.getParameter("debet_id"))));
+                transaction.setCreditAccount(creditAccount);
+                transaction.setSum(sum);
+                TransactionDao.save(transaction);
+            } else {
+//                show message
+            }
+
+//            Transaction transaction = new Transaction();
+//            transaction.setDebetAccount(AccountDao.findById(new Integer(req.getParameter("debet_id"))));
+//            transaction.setCreditAccount(creditAccount);
+//            transaction.setSum(sum);
+//            TransactionDao.save(transaction);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
         resp.sendRedirect("/transactions");
     }
 }
