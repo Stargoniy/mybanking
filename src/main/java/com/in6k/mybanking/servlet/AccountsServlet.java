@@ -20,7 +20,7 @@ public class AccountsServlet extends HttpServlet {
 
         List<Account> accounts = AccountDao.findAll();
         for (Account a : accounts) {
-            a.setSum(AccountDao.CalculateSum(a));
+            a.setSum(AccountDao.calculateSum(a));
         }
         req.setAttribute("accounts", accounts);
         req.getRequestDispatcher("/accounts.jsp").include(req, resp);

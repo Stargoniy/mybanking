@@ -34,26 +34,32 @@ public class AccountDao {
         return result;
     }
 
-    public static double CalculateSum(Account account) {
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        List<com.in6k.mybanking.entity.Transaction> transactionsDebet = session.createCriteria(com.in6k.mybanking.entity.Transaction.class).add(Expression.like("debetAccount", account)).list();
-        List<com.in6k.mybanking.entity.Transaction> transactionsCredit = session.createCriteria(com.in6k.mybanking.entity.Transaction.class).add(Expression.like("creditAccount", account)).list();
+    public static double calculateSum(Account account) {
         double result = 0;
-        for (com.in6k.mybanking.entity.Transaction t : transactionsDebet) {
-            result += t.getSum();
-        }
-        for (com.in6k.mybanking.entity.Transaction t : transactionsCredit) {
-            result -= t.getSum();
+        Session session = HibernateUtil.getSessionFactory().openSession();
+//        List<com.in6k.mybanking.entity.Transaction> transactionsDebet = session.createCriteria(com.in6k.mybanking.entity.Transaction.class).add(Expression.like("debetAccount", account)).list();
+//        List<com.in6k.mybanking.entity.Transaction> transactionsCredit = session.createCriteria(com.in6k.mybanking.entity.Transaction.class).add(Expression.like("creditAccount", account)).list();
+//        for (com.in6k.mybanking.entity.Transaction t : transactionsDebet) {
+//            result += t.getSum();
+//        }
+//        for (com.in6k.mybanking.entity.Transaction t : transactionsCredit) {
+//            result -= t.getSum();
+//        }
+
+        Query queryDebetSum = session.createSQLQuery("SELECT sum(sum) FROM transactions WHERE debet_account_id=?;");
+        queryDebetSum.setInteger(0, account.getId());
+        double debetSum = 0;
+        if (queryDebetSum.list().get(0) != null) {
+            debetSum = (Double)queryDebetSum.list().get(0);
         }
 
-//        String str = "SELECT * FROM transactions WHERE debet_account_id=? AND credit_account_id=?";
-//        Query sqlQuery = session.createSQLQuery("SELECT * FROM transactions WHERE debet_account_id=? AND credit_account_id=?", account);
-//        Query query = session.createSQLQuery("SELECT sum(t.sum) FROM transactions T WHERE debet_account_id=:accountId OR credit_account_id=:accountId").addEntity(com.in6k.mybanking.entity.Transaction.class);
-//        query.setInteger("accountId", account.getId());
-//        query.setInteger(1, account.getId());
-//        List list = query.list();
-//        Object res = query.uniqueResult();
-
+        Query queryCreditSum = session.createSQLQuery("SELECT sum(sum) FROM transactions WHERE credit_account_id=?;");
+        queryCreditSum.setInteger(0, account.getId());
+        double creditSum = 0;
+        if (queryCreditSum.list().get(0) != null) {
+            creditSum = (Double)queryCreditSum.list().get(0);
+        }
+        result = debetSum - creditSum;
         session.close();
         return result;
     }

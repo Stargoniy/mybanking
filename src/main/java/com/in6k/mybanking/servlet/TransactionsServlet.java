@@ -29,7 +29,7 @@ public class TransactionsServlet extends HttpServlet {
         try {
             double sum = Double.parseDouble(req.getParameter("sum"));
             Account creditAccount = AccountDao.findById(new Integer(req.getParameter("credit_id")));
-            if (creditAccount.getUser().isSystem() || sum < creditAccount.getSum()) {
+            if (creditAccount.getUser().isSystem() || sum < AccountDao.calculateSum(creditAccount)) {
                 Transaction transaction = new Transaction();
                 transaction.setDebetAccount(AccountDao.findById(new Integer(req.getParameter("debet_id"))));
                 transaction.setCreditAccount(creditAccount);
@@ -38,12 +38,6 @@ public class TransactionsServlet extends HttpServlet {
             } else {
 //                show message
             }
-
-//            Transaction transaction = new Transaction();
-//            transaction.setDebetAccount(AccountDao.findById(new Integer(req.getParameter("debet_id"))));
-//            transaction.setCreditAccount(creditAccount);
-//            transaction.setSum(sum);
-//            TransactionDao.save(transaction);
         } catch (NumberFormatException e) {
             e.printStackTrace();
         }
