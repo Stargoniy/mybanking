@@ -60,6 +60,9 @@ public class AccountDao {
             creditSum = (Double)queryCreditSum.list().get(0);
         }
         result = debetSum - creditSum;
+        result *= 1000;
+        result = Math.round(result);
+        result /= 1000;
         session.close();
         return result;
     }
