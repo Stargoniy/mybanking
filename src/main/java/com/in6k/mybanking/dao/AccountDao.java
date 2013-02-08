@@ -49,15 +49,17 @@ public class AccountDao {
         Query queryDebetSum = session.createSQLQuery("SELECT sum(sum) FROM transactions WHERE debet_account_id=?;");
         queryDebetSum.setInteger(0, account.getId());
         double debetSum = 0;
-        if (queryDebetSum.list().get(0) != null) {
-            debetSum = (Double)queryDebetSum.list().get(0);
+        Object bjectDebetSum = queryDebetSum.list().get(0);
+        if (bjectDebetSum != null) {
+            debetSum = (Double) bjectDebetSum;
         }
 
         Query queryCreditSum = session.createSQLQuery("SELECT sum(sum) FROM transactions WHERE credit_account_id=?;");
         queryCreditSum.setInteger(0, account.getId());
         double creditSum = 0;
-        if (queryCreditSum.list().get(0) != null) {
-            creditSum = (Double)queryCreditSum.list().get(0);
+        Object objectCreditSum = queryCreditSum.list().get(0);
+        if (objectCreditSum != null) {
+            creditSum = (Double) objectCreditSum;
         }
         result = debetSum - creditSum;
         result *= 1000;
